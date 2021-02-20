@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Aleen Kiledjian
+EMAIL: aleenkiledjian@gmail.com
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Aleen Kiledjian">
+  <meta name="description" content="Portfolio Contact Page with information to Different Ways to Contact Me">
+
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,400&family=Roboto:wght@400;700&family=Raleway:wght@300;400;700&family=Wire+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <!-- Allows for the nav bar slide indicator to highlight the current html page 
+  (0% = home, 25% = about, 50% = experience, 75% = contact)-->
+  <style>
+    .bar{display: block; margin-left: 75%; }
+  </style>
+
+</head>
+<body>
+    
+  <!-- Top Nav Bar -->
+  <nav class="slidemenu">
+    <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked="">
+    <label for="slide-item-1"><a href="index.html" class="LinkButton"><span class="navIcons fas fa-home"></span>HOME</a></label>
+    
+    <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle">
+    <label for="slide-item-2"><a href="about.html" class="LinkButton"><span class="navIcons fas fa-info-circle"></span>ABOUT</a></label>
+    
+    <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle">
+    <label for="slide-item-3"><a href="experience.html" class="LinkButton"><span class="navIcons fas fa-file-alt"></span>EXPERIENCE</a></label>
+    
+    <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle">
+    <label for="slide-item-4"><a href="contact.html" class="LinkButton"><span class="navIcons fas fa-phone-alt"></span>CONTACT</a></label>
+    
+    <div class="clear"></div>
+    
+    <div class="slider">
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <!-- Typerwriter Page Message -->
+  <p class="intro typewriterContact">> Contact Me...</p>
+
+  <!-- Contact Using HTML Forms -->
+  
+  <div class = "contact-section">
+    <p class="more"></p>
+    <form method="contact.php" name="myemailform" class = "contact-form" method = "POST"> 
+      <input type="text" name="name" title = "Name For Contact Text Field" class="contact-form-text" placeholder="Name">
+      <input type="text" name="email" title = "Email For Contact Text Field" class="contact-form-text" placeholder="Email">
+      <textarea id="textBox" name="message" title = "Message For Contact Text Field" class = "contact-form-text" placeholder="Message"></textarea>
+      <input type="submit" class="contact-form-btn" value = "Send">
+    </form>
+  </div>
+
+  <!-- Alternative Forms of Contact -->
+  <div class="container">
+    <address>
+        <a class="contact-link" href="mailto:aleenkiledjian@gmail.com">
+          <span class="icon fas fa-envelope"></span>
+          aleenkiledjian@gmail.com
+        </a>
+    </address>
+    <address>
+        <a class="contact-link" href="tel:8183316202">
+          <span class="icon fas fa-phone-square"></span>
+          (818) 331-6202
+        </a>
+    </address>
+    <address>
+      <a class="contact-link" href="https://www.linkedin.com/in/aleen-kiledjian-5861a5195" target="_blank">
+        <span class="icon fab fa-linkedin"></span>
+        LinkedIn
+      </a>
+    </address>
+    <address>
+        <a class="contact-link" href="https://www.google.com/maps/place/Los+Angeles,+CA/">
+          <span class="icon fas fa-map-marker-alt"></span>
+          Los Angeles, CA
+        </a>
+    </address>
+  </div>
+
+</body>
+</html>
